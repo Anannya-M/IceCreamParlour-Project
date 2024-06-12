@@ -1,0 +1,40 @@
+--------------Creating a Python Application for a fictional ice-cream parlor cafe--------------------------
+
+Steps To Build
+1. Run 'django-admin startproject <project name>'
+   a) Run 'python manage.py runserver' to check if the app is running fine.
+2. cd IceCreamParlour
+3. Run 'django-admin startapp <appname>'
+
+4. Go to project settings.py and add the appname to the INSTALLED_APPS.
+5. Go project's urls.py
+   a) Import include along with path
+   b) add a pth statement pointing to app's urls.py.
+
+6. Go to app folder, create file: urls.py.
+   a) Copy contents from project's urls.py and paste it in app's urls.py. Remove the admin imports and paths.
+   b) Import app's views.py into the urls.py
+   c) Provide the path for the homepage.
+
+7. Go to app's views.py, create the function mentioned in the urls.py
+    a) Point to the html file for the homepage
+
+8. Create a folder 'templates' in the app folder.
+    a) Create an HTML file named 'index.html'
+    b) Add contents to the HTML file
+9. Run 'python manage.py runserver' to check if the html file is run on the homepage.
+10. In the templates folder, create a base HTML file carrying the base components in the HTML file which will then be extended into other HTML files.
+
+11. Go the app's models.py.
+    a) Create the models or schema for the following:
+       I. Flavours
+       II. Ingredients
+       III. Allergies of Customers
+       IV. Flavour Suggestions to Customers based on their allergies.
+       V. Cart for toring favourite products.
+12. Run 'python manage.py makemigrations' & 'python manage.py migrate'
+13. Create super user: 'python manage.py createsuperuser'
+14. GO to app's admin.py and register all the models.
+
+15. Create a sign in page which would appear at the start of the project.
+16. Create a forms.py file for storing the details from the user to our database.

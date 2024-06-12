@@ -1,0 +1,27 @@
+
+.container{
+  background-color:lightblue;
+  height: 450px;
+  width: 360px;
+  border-radius: 10px;
+
+  position: fixed;
+  top: 100px;
+  left:420px;
+}
+
+.signHeader{
+  text-align: center;
+
+  position: relative;
+  top: 20px;
+}
+
+.formdiv{
+  position: relative;
+  top: 60px;
+}
+.formfloating{
+  position: relative;
+  top: 20px;
+}
